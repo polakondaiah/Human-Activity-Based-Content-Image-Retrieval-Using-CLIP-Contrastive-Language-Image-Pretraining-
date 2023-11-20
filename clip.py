@@ -118,8 +118,7 @@ if __name__ == "__main__":
     # Evaluate the model
     query_labels = [label for _, label in query_data]  # Extract labels from query data
     gallery_labels = [label for _, label in gallery_data]  # Extract labels from gallery data
-#     evaluation_results = evaluate_model(retrieved_indices, query_labels, gallery_labels)
-#     print(f"Evaluation Results: {evaluation_results}")
+
    # Evaluate the model
     evaluation_results, mean_rank_score = evaluate_model(retrieved_indices, query_labels, gallery_labels)
     print(f"Evaluation Results: {evaluation_results}")
